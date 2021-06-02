@@ -12,7 +12,7 @@ import {
 // custom element
 const customEl = h( 'my-element', { class: 'foo' } )
 
-// 0 ore more attribute or node or text arguments
+// 0 or more attribute or node or text arguments
 const divEl = div( { id: 'bar' }, span( 'hello, ' ), 'world' )
 
 // 0 or more string arguments
