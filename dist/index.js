@@ -13,5 +13,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./h"), exports);
 __exportStar(require("./predicates"), exports);
 __exportStar(require("./s"), exports);
+__exportStar(require("./types"), exports);
 __exportStar(require("./util"), exports);
 //# sourceMappingURL=index.js.map
