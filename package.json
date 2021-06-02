@@ -1,0 +1,21 @@
+{
+  "name": "@mojule/dom",
+  "version": "0.1.0",
+  "description": "Hyperscript-like DOM functions for HTML and SVG",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojule/dom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojule/dom/issues"
+  },
+  "homepage": "https://github.com/mojule/dom#readme"
+}
