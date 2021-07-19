@@ -1,6 +1,6 @@
 {
   "name": "@mojule/dom",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Hyperscript-like DOM functions for HTML and SVG",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/mojule/dom/issues"
   },
-  "homepage": "https://github.com/mojule/dom#readme"
+  "homepage": "https://github.com/mojule/dom#readme",
+  "dependencies": {
+    "clean-css": "^5.1.3"
+  },
+  "devDependencies": {
+    "@types/clean-css": "^4.2.5"
+  }
 }
