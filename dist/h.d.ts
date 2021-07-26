@@ -14,7 +14,6 @@ export declare const aside: (...args: HArg[]) => HTMLElement;
 export declare const audio: (...args: HArg[]) => HTMLAudioElement;
 export declare const b: (...args: HArg[]) => HTMLElement;
 export declare const base: (...args: HArg[]) => HTMLBaseElement;
-export declare const basefont: (...args: HArg[]) => HTMLBaseFontElement;
 export declare const bdi: (...args: HArg[]) => HTMLElement;
 export declare const bdo: (...args: HArg[]) => HTMLElement;
 export declare const blockquote: (...args: HArg[]) => HTMLQuoteElement;
