@@ -6,8 +6,8 @@ const isNode = (value) => value && typeof value['nodeType'] === 'number';
 exports.isNode = isNode;
 const isElement = (value) => value && value['nodeType'] === 1;
 exports.isElement = isElement;
-const isSVGElement = (value) => exports.isElement(value) && value.namespaceURI === consts_1.svgNs;
+const isSVGElement = (value) => (0, exports.isElement)(value) && value.namespaceURI === consts_1.svgNs;
 exports.isSVGElement = isSVGElement;
-const isHTMLOrSVGElement = (value) => exports.isElement(value) && 'dataset' in value;
+const isHTMLOrSVGElement = (value) => (0, exports.isElement)(value) && 'dataset' in value;
 exports.isHTMLOrSVGElement = isHTMLOrSVGElement;
 //# sourceMappingURL=predicates.js.map

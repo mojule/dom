@@ -47,7 +47,6 @@ export const styleToString = (style: Partial<CSSStyleDeclaration>) => {
 export const a = htmlElementFactory( 'a')
 export const abbr = htmlElementFactory( 'abbr')
 export const address = htmlElementFactory( 'address')
-export const applet = htmlElementFactory( 'applet')
 export const area = htmlElementFactory( 'area')
 export const article = htmlElementFactory( 'article')
 export const aside = htmlElementFactory( 'aside')

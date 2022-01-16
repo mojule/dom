@@ -31,7 +31,7 @@ const attr = (el, ...attributeRecords) => {
                 }
                 return;
             }
-            if (key === dataKey && predicates_1.isHTMLOrSVGElement(el)) {
+            if (key === dataKey && (0, predicates_1.isHTMLOrSVGElement)(el)) {
                 Object.assign(el.dataset, attributes[key]);
                 return;
             }
@@ -53,14 +53,14 @@ const strictSelect = (selectors, el = document) => {
 exports.strictSelect = strictSelect;
 const decorateData = (data, ...els) => {
     els.forEach(el => Object.assign(el.dataset, data));
-    return h_1.fragment(...els);
+    return (0, h_1.fragment)(...els);
 };
 exports.decorateData = decorateData;
 const decorateAttributes = (attrs, ...els) => {
     els.forEach(el => {
-        exports.attr(el, attrs);
+        (0, exports.attr)(el, attrs);
     });
-    return h_1.fragment(...els);
+    return (0, h_1.fragment)(...els);
 };
 exports.decorateAttributes = decorateAttributes;
 const unwrap = (el) => {
@@ -73,6 +73,6 @@ const unwrap = (el) => {
     el.remove();
 };
 exports.unwrap = unwrap;
-const css = (strings, ...keys) => h_1.style(strings.map((s, i) => s + (keys[i] || '')).join(''));
+const css = (strings, ...keys) => (0, h_1.style)(strings.map((s, i) => s + (keys[i] || '')).join(''));
 exports.css = css;
 //# sourceMappingURL=util.js.map

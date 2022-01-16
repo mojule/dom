@@ -10,7 +10,7 @@ const concatUniqueTextNodes = (...elements) => {
 };
 exports.concatUniqueTextNodes = concatUniqueTextNodes;
 const concatAndMove = (wrapper, target, ...elements) => {
-    const text = exports.concatUniqueTextNodes(...elements);
+    const text = (0, exports.concatUniqueTextNodes)(...elements);
     elements.forEach(el => el.remove());
     if (text) {
         target.appendChild(wrapper(text));
@@ -18,7 +18,7 @@ const concatAndMove = (wrapper, target, ...elements) => {
 };
 exports.concatAndMove = concatAndMove;
 const concatAndMoveCss = (wrapper, target, ...elements) => {
-    let css = exports.concatUniqueTextNodes(...elements);
+    let css = (0, exports.concatUniqueTextNodes)(...elements);
     elements.forEach(el => el.remove());
     if (css) {
         //const start = process.hrtime()
